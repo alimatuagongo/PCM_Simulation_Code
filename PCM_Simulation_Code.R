@@ -2547,8 +2547,8 @@ for (s in settingop) true_props[[s]] <- data.frame(
 
 get_simulation_params <- function(setting) {
   switch(as.character(setting),
-         "1" = list(beta = c(2, 0.4), alpha = 1.5, delta = 0.2),
-         "2" =  list(beta = c(2, 0.4), alpha = 1.5, delta = 0.2),
+         "1" = list(beta = c(1, 0.5), alpha = 2, delta = 0.2),
+         "2" =  list(beta = c(1, 0.5), alpha = 2, delta = 0.2),
          # "3" = list(beta = c(1, 0.5), alpha = 2, delta = 0.20),
          "3" = list(beta = c(1.5, 0.5, 1.3, -0.6, -1.4), alpha = 0.2, delta = 0.2),
          stop("Unsupported setting")
